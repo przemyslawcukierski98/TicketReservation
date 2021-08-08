@@ -12,5 +12,10 @@ namespace TicketReservation.Controllers
         {
             return View();
         }
+
+        public IActionResult ZenekConcert()
+        {
+            return View();
+        }
     }
 }
