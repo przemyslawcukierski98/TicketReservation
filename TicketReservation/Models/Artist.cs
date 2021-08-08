@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 
 namespace TicketReservation.Models
 {
-    public class Concert
+    public class Artist
     {
-        public Artist ArtistObj { get; set; }
     }
 }
