@@ -7,5 +7,8 @@ namespace TicketReservation.Models
 {
     public class Artist
     {
+        public string ArtistName { get; set; }
+        public string ConcertHours { get; set; }
+        public string ArtistDescription { get; set; }
     }
 }
