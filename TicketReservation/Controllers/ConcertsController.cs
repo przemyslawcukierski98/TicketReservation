@@ -17,5 +17,15 @@ namespace TicketReservation.Controllers
         {
             return View();
         }
+
+        public IActionResult CartiConcert()
+        {
+            return View();
+        }
+
+        public IActionResult CoolConcert()
+        {
+            return View();
+        }
     }
 }
