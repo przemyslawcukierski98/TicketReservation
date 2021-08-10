@@ -55,28 +55,28 @@
 <body>
 
     <div class="card">
-        <img src="https://is5-ssl.mzstatic.com/image/thumb/Features115/v4/4f/6c/cf/4f6ccf13-9927-7965-d954-3178a49f8e0c/mzl.iquhwvbg.jpg/375x375cc.webp" alt="Denim Jeans" style="width:100%">
-        <h1>Playboy Carti w Hali Torwar</h1>
-        <p class="price">od 149.99 PLN</p>
-        <p>Jedyny taki występ w Polsce! Playboy Carti zaprezentuje po raz pierwszy na żywo utwory z wersji Deluxe kultowego albumu "Whole Lotta Red"!</p>
+        <img src="@ViewBag.details[0].ImageUri" alt="Denim Jeans" style="width:100%">
+        <h1>@ViewBag.details[0].ConcertTitle</h1>
+        <p class="price">@ViewBag.details[0].UnderTitle</p>
+        <p>@ViewBag.details[0].Description</p>
         <button><a href="CartiConcert" class="myButtonClass">Zamów bilet &raquo;</a></button>
     </div>
     <br />
 
     <div class="card">
-        <img src="https://muno.pl/wp-content/uploads/2020/05/Arca-850x570.jpg" alt="Denim Jeans" style="width:100%">
-        <h1>COOL FESTIVAL - Hala Stulecia, Wrocław</h1>
-        <p class="price">od 299.99 PLN</p>
-        <p>Arca, Bjork, Tyler the Creator, Amnesia Scanner, IC3PEAK, tylko w Hali Stulecia, 15 września 2021 r.!</p>
+        <img src="@ViewBag.details[1].ImageUri" alt="Denim Jeans" style="width:100%">
+        <h1>@ViewBag.details[1].ConcertTitle</h1>
+        <p class="price">@ViewBag.details[1].UnderTitle</p>
+        <p>@ViewBag.details[1].Description</p>
         <button><a href="CoolConcert" class="myButtonClass">Zamów bilet &raquo;</a></button>
     </div>
     <br />
 
     <div class="card">
-        <img src="https://i.iplsc.com/zenek-martyniuk/0009PL2T6I1M5SJB-C122-F4.jpg" alt="Denim Jeans" style="width:100%">
-        <h1>Zenek Martyniuk Symfonicznie</h1>
-        <p class="price">od 99.99 PLN</p>
-        <p>Największe hity króla disco polo w wykonaniu Narodowej Orkiestry Symfonicznej Polskiego Radia. Jedyne takie wydarzenie w stolicy Podkarpacia!</p>
+        <img src="@ViewBag.details[2].ImageUri" alt="Denim Jeans" style="width:100%">
+        <h1>@ViewBag.details[2].ConcertTitle</h1>
+        <p class="price">@ViewBag.details[2].UnderTitle</p>
+        <p>@ViewBag.details[2].Description</p>
         <button><a href="ZenekConcert" class="myButtonClass">Zamów bilet &raquo;</a></button>
     </div>
     <br />
