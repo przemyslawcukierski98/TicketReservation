@@ -32,6 +32,13 @@ namespace TicketReservation.Controllers
 
         public IActionResult CartiConcert()
         {
+            PageConcertObject cartiConcertObject = new PageConcertObject();
+            cartiConcertObject.Header = "Playboy Carti w Hali Torwar";
+            cartiConcertObject.HeaderDescription = "Hala Torwar, Warszawa, 03/07/2021, 19:30";
+            cartiConcertObject.MainImageUri = "https://img.discogs.com/xx-TjXD-s5ZzcrGqNka830DN-fk=/600x846/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-4637951-1510976555-3557.jpeg.jpg";
+            cartiConcertObject.ConcertDescription = "Jeden z najwybitniejszych raperów młodego pokolenia - Playboy Carti wraz z nowym albumem \"Whole Lotta Red\" po raz pierwszy w Polsce! Gotowi na muzyczne wydarzenie roku?";
+
+            ViewBag.cartiConcert = cartiConcertObject;
             return View();
         }
 
