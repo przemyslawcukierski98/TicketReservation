@@ -27,6 +27,13 @@ namespace TicketReservation.Controllers
 
         public IActionResult ZenekConcert()
         {
+            PageConcertObject zenekConcertObject = new PageConcertObject();
+            zenekConcertObject.Header = "Zenek Martyniuk Symfonicznie";
+            zenekConcertObject.HeaderDescription = "Hala Podpromie, Rzeszów, 23/12/2021, 21:00";
+            zenekConcertObject.MainImageUri = "https://ocdn.eu/pulscms-transforms/1/h25k9kpTURBXy85YzA4MGJjNmJkZDk4OGI4NTg5YjQ0ODBmMTdlNTMxNy5qcGeSlQMANs0KIM0FspMFzQNIzQH6gqEwBaExAQ";
+            zenekConcertObject.ConcertDescription = "Narodowa Orkiestra Symfoniczna Polskiego Radia wykona specjalnie przygotowane aranżacje największych hitów barda muzyki disco-polo. Zenek Martyniuk - tej postaci nikomu przedstawiać nie trzeba, a twórczości króla polskiej muzyki tanecznej postarają się sprostać instrumentaliści z NOSPR. Zapraszamy serdecznie!";
+
+            ViewBag.zenekConcert = zenekConcertObject;
             return View();
         }
 
@@ -44,6 +51,13 @@ namespace TicketReservation.Controllers
 
         public IActionResult CoolConcert()
         {
+            PageConcertObject coolConcertObject = new PageConcertObject();
+            coolConcertObject.Header = "COOL FESTIVAL - Hala Stulecia we Wrocławiu!";
+            coolConcertObject.HeaderDescription = "Hala Stulecia, Wrocław, 15/09/2021, 17:00";
+            coolConcertObject.MainImageUri = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Arca_Sonar_1.jpg/1200px-Arca_Sonar_1.jpg";
+            coolConcertObject.ConcertDescription = "Arca, Bjork, Tyler the Creator, Amnesia Scanner, IC3PEAK, tylko w Hali Stulecia, 15 września 2021 r.!";
+
+            ViewBag.coolConcert = coolConcertObject;
             return View();
         }
     }
