@@ -8,6 +8,24 @@ namespace TicketReservation.Controllers
 {
     public class TicketsController : Controller
     {
+        public IActionResult OrderingTicketCarti()
+        {
+            ViewBag.ConcertName = "PLAYBOY CARTI";
+            return View("OrderingTicket");
+        }
+
+        public IActionResult OrderingTicketCool()
+        {
+            ViewBag.ConcertName = "COOL";
+            return View("OrderingTicket");
+        }
+
+        public IActionResult OrderingTicketZenek()
+        {
+            ViewBag.ConcertName = "ZENEK";
+            return View("OrderingTicket");
+        }
+
         public IActionResult OrderingTicket()
         {
             return View();
