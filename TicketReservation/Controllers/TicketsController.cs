@@ -10,19 +10,19 @@ namespace TicketReservation.Controllers
     {
         public IActionResult OrderingTicketCarti()
         {
-            ViewBag.ConcertName = "PLAYBOY CARTI";
+            ViewBag.ConcertName = "Playboy Carti w Hali Torwar";
             return View("OrderingTicket");
         }
 
         public IActionResult OrderingTicketCool()
         {
-            ViewBag.ConcertName = "COOL";
+            ViewBag.ConcertName = "COOL FESTIVAL - Hala Stulecia we Wrocławiu!";
             return View("OrderingTicket");
         }
 
         public IActionResult OrderingTicketZenek()
         {
-            ViewBag.ConcertName = "ZENEK";
+            ViewBag.ConcertName = "Zenek Martyniuk Symfonicznie";
             return View("OrderingTicket");
         }
 
