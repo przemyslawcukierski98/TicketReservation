@@ -77,7 +77,9 @@
         <h1>@ViewBag.details[2].ConcertTitle</h1>
         <p class="price">@ViewBag.details[2].UnderTitle</p>
         <p>@ViewBag.details[2].Description</p>
-        <button><a href="ZenekConcert" class="myButtonClass">Zamów bilet &raquo;</a></button>
+        <p><a href="@Url.Action("ZenekConcert", "Concerts")">Zamów bilet</a></p>
+        <!-- <button><a href="ZenekConcert" class="myButtonClass">Zamów bilet &raquo;</a></button> -->
+
     </div>
     <br />
 

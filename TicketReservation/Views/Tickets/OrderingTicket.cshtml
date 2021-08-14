@@ -1,0 +1,91 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zamów bilet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Zamów bilet</h3>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">Imię</label>
+            <input type="text" id="fname" name="firstname" placeholder="Twoje imię...">
+
+            <label for="lname">Nazwisko</label>
+            <input type="text" id="lname" name="lastname" placeholder="Twoje nazwisko..">
+
+            <label for="city">Miejscowość</label>
+            <input type="text" id="city" name="city" placeholder="Miejscowość...">
+
+            <label for="street">Ulica</label>
+            <input type="text" id="street" name="street" placeholder="Ulica..">
+
+            <label for="housenr">Numer domu</label>
+            <input type="text" id="housenr" name="housenumber" placeholder="Numer domu..">
+
+            <label for="housenr">Adres e-mail</label>
+            <input type="text" id="email" name="emailaddress" placeholder="Adres e-mail..">
+
+            <label for="phone">Numer telefonu</label>
+            <input type="text" id="phone" name="phonenumber" placeholder="Numer telefonu..">
+
+            <label for="ticket">Rodzaj biletu</label>
+            <select id="country" name="country">
+                <option value="first">1</option>
+                <option value="second">2</option>
+                <option value="third">3</option>
+            </select>
+
+            <input type="submit" value="Kup bilet">
+        </form>
+    </div>
+</body>
+</html>
